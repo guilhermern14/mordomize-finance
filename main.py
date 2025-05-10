@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, request  
 from twilio.twiml.messaging_response import MessagingResponse  
 
@@ -9,7 +10,7 @@ def whatsapp_bot():
     resp = MessagingResponse()  
     
     if "#saldo" in msg:  
-        resp.message("Seu saldo é R$ 1000,00")  
+        resp.message("Seu saldo Ã© R$ 1000,00")  
     elif "#ajuda" in msg:  
         resp.message("Comandos: #saldo, #gastar [valor] [categoria]")  
     
